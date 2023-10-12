@@ -1,6 +1,7 @@
 import "../../components/Products/Products.css";
 import ProductItem from "./ProductItem";
 import { productData } from "../../productData";
+import NewProduct from "../NewProduct/NewProduct";
 // import ToggleBackground from "./ToggleBackground";
 //! sahte veri tabanı oluşturduk.
 
@@ -11,6 +12,7 @@ const Products = () => {
   // const productPrice = 10;
   return (
     <div className="product-wrapper">
+      <NewProduct />
       <h1>Products</h1>
       <div className="products ">
         {/* //!ikinci yol */}
