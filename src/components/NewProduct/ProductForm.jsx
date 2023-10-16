@@ -49,6 +49,7 @@ function ProductForm(props) {
   const submitHandler = (event) => {
     event.preventDefault();
     const newProductData = {
+      id: props.products.length + 1,
       productName,
       productPrice,
       imageUrl,

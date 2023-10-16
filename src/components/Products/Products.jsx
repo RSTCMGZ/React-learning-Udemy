@@ -15,15 +15,19 @@ const Products = () => {
 
   return (
     <div className="product-wrapper">
-      <NewProduct SetProducts={SetProducts} />
+      <NewProduct products={products} SetProducts={SetProducts} />
       <h1>Products</h1>
       <div className="products ">
         {/* //!ikinci yol */}
         {/* {productData.map((product) => {
           return <ProductItem key={product.productName} product={product} />;
         })} */}
-        {products.map((product) => (
+        {/* {products.map((product) => (
           <ProductItem key={product.productName} product={product} />
+        ))} */}
+        {/* //!ikinci yol */}
+        {products.map((product) => (
+          <ProductItem product={product} key={product.id} />
         ))}
 
         {/* <ProductItem imageUrl={imageUrl} productName="Süt" productPrice="45" /> */}

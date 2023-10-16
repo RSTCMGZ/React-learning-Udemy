@@ -10,7 +10,7 @@ function Counter(props) {
       <button onClick={() => props.SetCount(props.count - 1)}>-</button>
       {props.children}
       {/* <span>{count} ₺</span> */}
-      <button onClick={() => props.SetCount(props.count + 1)}>+</button>
+      <button onClick={() => props.SetCount(Number(props.count) + 1)}>+</button>
     </div>
   );
 }
