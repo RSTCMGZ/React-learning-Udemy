@@ -15,10 +15,23 @@ code {
 }
 
 button {
-  padding: 4px 8px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
   background-color: rgb(238, 102, 5);
   color: white;
+}
+.product-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 3px;
+}
+.product-buttons button {
+  height: 30px;
+}
+
+.btn-delete {
+  background-color: rgba(213, 32, 29, 0.992);
+  width: 35%;
 }

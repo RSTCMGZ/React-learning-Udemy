@@ -26,13 +26,21 @@
 }
 
 .product-form button {
-  flex-basis: 100%;
   margin-top: 10px;
   height: 30px;
+}
+.product-form button.cancel {
+  background-color: rgba(213, 32, 29, 0.992);
 }
 
 .product-form .product-form-input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
 }

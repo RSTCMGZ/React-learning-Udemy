@@ -90,7 +90,16 @@ function ProductForm(props) {
           value={imageUrl}
         />
       </div>
-      <button className="product-form-button">Ürün Ekle</button>
+      <div className="form-buttons">
+        <button className="product-form-button">Ürün Ekle</button>
+        <button
+          className="product-form-button cancel"
+          onClick={() => props.setIsOpen(false)}
+          type="button"
+        >
+          Vazgeç
+        </button>
+      </div>
     </form>
   );
 }

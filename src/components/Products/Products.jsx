@@ -21,7 +21,12 @@ const Products = () => {
           <p>Hiç Ürün Yok.</p>
         ) : (
           products.map((product) => (
-            <ProductItem product={product} key={product.id} />
+            <ProductItem
+              product={product}
+              key={product.id}
+              SetProducts={SetProducts}
+              products={products}
+            />
           ))
         )}
         {/* //!ikinci yol */}

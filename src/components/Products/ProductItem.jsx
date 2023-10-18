@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../../components/Products/ProductItem.css";
 import ProductInfo from "./ProductInfo";
 import Counter from "./Counter";
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, SetProducts, products }) => {
   // const { product } = props; //props bu şekildede yazılabilinir.
   const { imageUrl, productName, productPrice } = product; // böylede yazılır.
   // let title = productName;
@@ -15,6 +15,9 @@ const ProductItem = ({ product }) => {
   };
   const click = () => {
     setTitle(productName);
+  };
+  const deleteHandler = () => {
+    SetProducts(products.filter((item) => item.id !== product.id));
   };
 
   // const clickHandler = () => console.log("Sepete Eklendi!");
@@ -47,8 +50,13 @@ const ProductItem = ({ product }) => {
           Sepete Ekle
         </button> */}
         {/* <button onCanPlay={clickHandler}>Sepete Ekle</button> */}
-        <button onClick={clickHandler}>Güncelle</button>
-        <button onClick={click}>geri al</button>
+        <div className="product-buttons ">
+          <button onClick={clickHandler}>Güncelle</button>
+          <button onClick={click}>Geri al</button>
+          <button className="btn-delete" onClick={deleteHandler}>
+            Sil
+          </button>
+        </div>
       </ProductInfo>
     </div>
   );
