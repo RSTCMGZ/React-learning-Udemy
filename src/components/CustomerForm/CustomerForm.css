@@ -1,11 +1,11 @@
-.customer-form {
+/* .customer-form {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 10px;
   margin-bottom: 20px;
-}
-
+} */
+/* 
 .customer-input {
   position: relative;
   cursor: text;
@@ -21,14 +21,14 @@
   overflow: hidden;
   transition: all 100ms ease-in-out;
   flex: 1;
-}
+} */
 
 .customer-input:focus {
   border-color: #3c4fe0;
   box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
 }
 .invalid {
-  background-color: red;
+  background-color: red !important;
 }
 .invalid::placeholder {
   color: #fff;
