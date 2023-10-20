@@ -11,9 +11,12 @@ import styles from "./CustomerItem.module.css";
 // `;
 
 const CustomerItem = ({ customer, handleDelete }) => {
+  const handleClick = () => {
+    console.log("click");
+  };
   return (
     <li className={styles.customerItem}>
-      <div className={styles.customerInfo}>
+      <div className={styles.customerInfo} onClick={handleClick}>
         <img
           src="https://i.pravatar.cc/300"
           alt=""
