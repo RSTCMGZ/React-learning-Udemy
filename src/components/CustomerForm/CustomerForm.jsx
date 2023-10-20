@@ -40,7 +40,7 @@ const CustomerForm = ({ addNewCustomer }) => {
       return;
     }
     const newCustomer = {
-      id: Math.random(),
+      id: Math.floor(Math.random() * 1000),
       customerName,
     };
     addNewCustomer(newCustomer);
